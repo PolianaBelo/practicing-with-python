@@ -1,5 +1,4 @@
 import unittest
-from unittest import mock
 from exercise4 import triangle_types
 
 
@@ -23,16 +22,16 @@ class MyTestCase(unittest.TestCase):
         self.assertEqual(triangle_types.define_triangle_type([44, 708, 306]), "Scalene")
 
     def test_contains_zero_or_negative_numbers_with_negative_and_zero_numbers(self):
-        self.assertGreater(triangle_types.contains_zero_or_negative_numbers([0, -2000, -4, -80, -33, 0]), 0)
-        self.assertGreater(triangle_types.contains_zero_or_negative_numbers([0, 0, 0, 0, 0]), 0)
-        self.assertGreater(triangle_types.contains_zero_or_negative_numbers([0]), 0)
-        self.assertGreater(triangle_types.contains_zero_or_negative_numbers([-1]), 0)
+        self.assertTrue(triangle_types.contains_zero_or_negative_numbers([0, -2000, -4, -80, -33, 0]))
+        self.assertTrue(triangle_types.contains_zero_or_negative_numbers([0, 0, 0, 0, 0]))
+        self.assertTrue(triangle_types.contains_zero_or_negative_numbers([0]))
+        self.assertTrue(triangle_types.contains_zero_or_negative_numbers([-1]))
 
     def test_contains_zero_or_negative_numbers_with_positive_numbers(self):
-        self.assertEqual(triangle_types.contains_zero_or_negative_numbers([7, 2000, 4, 80, 33, 9999999]), 0)
-        self.assertEqual(triangle_types.contains_zero_or_negative_numbers([1.1, 9]), 0)
-        self.assertEqual(triangle_types.contains_zero_or_negative_numbers([100000]), 0)
-        self.assertEqual(triangle_types.contains_zero_or_negative_numbers([1]), 0)
+        self.assertFalse(triangle_types.contains_zero_or_negative_numbers([7, 2000, 4, 80, 33, 9999999]))
+        self.assertFalse(triangle_types.contains_zero_or_negative_numbers([1.1, 9]))
+        self.assertFalse(triangle_types.contains_zero_or_negative_numbers([100000]))
+        self.assertFalse(triangle_types.contains_zero_or_negative_numbers([1]))
 
     def test_is_valid_triangle_with_valid_values(self):
         self.assertTrue(triangle_types.is_valid_triangle([1, 2, 3]))

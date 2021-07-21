@@ -17,8 +17,8 @@ The reasons for these topics are:
 ```
 public class OddParity {
 
-public static boolean isOdd(int numberToCheck) {
-     return numberToCheck % 2 != 0;
+    public static boolean isOdd(int numberToCheck) {
+         return numberToCheck % 2 != 0;
     }
 }
 ```

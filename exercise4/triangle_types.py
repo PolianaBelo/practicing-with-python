@@ -23,7 +23,7 @@ def is_valid_triangle(triangle_sides):
 
 
 def contains_zero_or_negative_numbers(numbers):
-    return sum(1 for number in numbers if number <= 0)
+    return sum(1 for number in numbers if number <= 0) > 0
 
 
 def define_triangle_type(triangle_sides):
