@@ -1,0 +1,2 @@
+class InvalidSequenceOfNamesException(Exception):
+    pass
