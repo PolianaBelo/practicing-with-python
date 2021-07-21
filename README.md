@@ -1,7 +1,7 @@
 # practicing-with-python
-### The folders of this repository are solutions that correspond to the exercises listed below.
-### To run the projects in Exercise 3 and 4 it is necessary to have Python previously installed and configured.
-### The projects in Exercise 3 and 4 were developed using Python3.7.
+The folders of this repository are solutions that correspond to the exercises listed below.
+To run the projects in Exercise 3 and 4 it is necessary to have Python previously installed and configured.
+The projects in Exercise 3 and 4 were developed using Python3.7.
 
 
 ### Exercise #1
