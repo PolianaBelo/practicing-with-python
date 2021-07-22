@@ -8,8 +8,8 @@ The problems I found in the code are:
 
 The proposed improvements are:
 1. A constructor must have the init name prefixed and suffixed with a double underscore.
-2. Remove getters and setters since they aren't necessary for Python since the language doesn't provide data encapsulation.
-3. Remove the first underscore from _my_dict, according to PEP 8 doesn't it isn't recommended.
+2. Remove getters and setters since they aren't necessary for Python (the language doesn't provide data encapsulation).
+3. Remove the first underscore from _my_dict, according to PEP 8 it isn't recommended.
 4. In the buffer creation use a method to copy the referenced dictionary.
 
 ### Fix 1:
